@@ -1,0 +1,54 @@
+@font-face{
+	font-family:Valorant;
+	src: url(fonts/ValorantFont.woff);
+	font-style:regular;
+}
+@font-face{
+	font-family:OpenSans;
+	src: url(fonts/OpenSans-Regular.ttf);
+	
+}
+@font-face{
+	font-family:OpenSansL;
+	src: url(fonts/OpenSans-Light.ttf);
+	
+}
+@font-face{
+	font-family:AlfaSlabOne;
+	src: url(fonts/AlfaSlabOne-Regular.ttf);
+	
+}
+@font-face{
+    font-family:AlfaSlabOneC;
+	src: url(fonts/AlfaSlabOne-Regular.ttf);
+
+}
+ body {
+	background:#46c3db;	
+    margin: 25px 50px;
+    line-height:1.5;
+  
+}
+.p{
+    font-size:20px;
+    font-family:'Alfa Slab One',cursive;
+}
+h2{
+    margin-bottom:1.5px;	
+}   
+img {
+    border-radius: 100%;
+}
+.logos{
+	width: 30px;
+}
+p{
+	font-family:OpenSansL;
+    font-size:20px;
+	text-align: center;	 
+}
+.div{
+    padding:20px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
