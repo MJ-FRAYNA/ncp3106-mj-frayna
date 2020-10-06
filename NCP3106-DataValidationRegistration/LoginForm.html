@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="LoginFormcss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body>
+    <div class="divs">
+      <h2>ACCOUNT REGISTRATION</h2>
+    </div>
+    <div class="row" style="background-color:#a1eafb;">
+      <div class="column left">
+        <form id = "registrationForm" action="openDB.php" method="POST" class="form" >
+          <label for="lastname">Lastname:</label><br>
+          <input type="text" placeholder="Lastname" name="lastname" id="lastname" class="input"required>
+          <br>
+          <!---<small>Error message</small>---->
+          <br>
+          <label for="firstname">Firstname:</label><label for="middileI">M.I.</label><br>
+          <input type="text" placeholder="Firstname" name="firstname" id="firstname" class="inputs"required>
+          <input type="text" id="middleI" name="middleI" placeholder="M.I." class="inputz">
+          <br>
+          <!---<small>Error message</small>---->
+          <br>
+          <label for="studID"> Student Number:</label><br>
+          <input type="text" placeholder="Student Number" name="studID" id="studID" class="input"required><br> 
+          <!---<small>Error message</small>---->
+          <br>
+          <label for="yrlevel"> Year Level:</label><label for="birthday">Birthdate:</label><br>
+          <select name="yrlevel" id="yrlevel" placeholder="Year Level"required>
+            <option value="One">1st Year</option>
+            <option value="One">1st Year</option>
+            <option value="Two">2nd Year</option>
+            <option value="Three">3rd year</option>
+            <option value="Four">4th year</option>
+            <option value="Five">5th year</option>
+          </select>
+          <input type="date" id="birthday" name="birthday"><br>
+          <br>
+          <label for="mobilenumber">Mobile Number:</label><br>
+          <input type="text" placeholder="Mobile Number" name="mobilenumber" id="mobilenumber"class="input" required><br>
+          <!---<small>Error message</small>---->
+          <br>
+          <label for="ueEmailAddress">UE Email Address</label><br>
+          <input type="text" placeholder="UE Email Address" name="ueEmailAddress" id="ueEmailAddress" class="input"required><br>
+          <!---<small>Error message</small>---->
+          <br>
+      </div>
+      <div class="column right">
+        <form id = "signupForm" action="signup.php" method="POST" >
+          <label for="uname">Username:</label><br>
+          <input type="input" id="uname" name="uname" placeholder="Username" class="inputv" required><br>
+          <br>
+          <label for="password">Password:</label><br>
+          <input type="password" placeholder="Password" name="password" id="password" class="inputv"required>
+          <br>
+          <br>
+          <label for="confirmpassword">Confirm Password:</label><br>
+          <input type="password" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword" class="inputv"required> 
+          <br>
+          <input type="checkbox" onclick="Toggle()">
+          <label for="show"> Show password</label> 
+          <script> 
+          // Change the type of input to password or text 
+            function Toggle() { 
+                var temp = document.getElementById("password"); 
+                if (temp.type === "password") { 
+                    temp.type = "text"; 
+                } 
+                else { 
+                    temp.type = "password"; 
+                } 
+            } 
+          </script> 
+          <br>
+          <input type="checkbox" id="Remember me" name="Remember me" value="Remember Me">
+          <label for="keep">Keep me signed In</label>
+          <br>
+          <br>
+          <input type="checkbox" id="Terms" name="Terms" value="Terms">
+          <label for="keep">Agree Terms & Conditions</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta, 
+          orci et vehicula cursus, nisl dolor hendrerit diam, eget leo us ornare dui nibh at tellus. 
+          Vivamus volutpat rhoncus hendrerit sune. Nulla lacinia tristique tellus id sodales. 
+          Aenean quis fringilla urna, eu maximus dui. In lobortis convallis consectetur.
+          Fusce pretium eu velit ut cursus. Vivamus quis enim et neque lacinia rhoncus. 
+          Nullam sapien leo, cursus nec neque vel, feugiat faucibus. 
+          </p>
+          <button onclick="return myFunction()" 
+          id="register" name="register"><b>REGISTER</b></button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

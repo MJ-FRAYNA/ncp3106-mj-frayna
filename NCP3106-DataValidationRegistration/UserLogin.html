@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="userlogin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body>
+<div class = "divs">
+    <form action="userlogin.php" method ="POST">
+        <h2>ACCOUNT LOGIN</h2>
+        <label for="uname">Username:</label><br>
+        <input type="input" id="uname" name="uname" placeholder="Username" class="inputs"><br>
+        <br>
+        <label for="password">Password:</label><br>
+        <input type="password" placeholder="Password" name="password" id="password" class="inputs">  
+        <br>
+        <br>
+        <input type="checkbox" onclick="Toggle()">
+        <label for="show"> Show password</label> 
+        <script> 
+        // Change the type of input to password or text 
+            function Toggle() { 
+                var temp = document.getElementById("password"); 
+                if (temp.type === "password") { 
+                    temp.type = "text"; 
+                } 
+                else { 
+                    temp.type = "password"; 
+                } 
+            } 
+        </script> 
+        <br>
+        <br>
+        <input type="checkbox" id="Remember me" name="Remember me" value="Remember Me">
+        <label for="keep">Keep me signed In</label>
+        <br>
+        <br>
+        <input type="submit" value="LOG - IN">      
+        <br>  
+        <p>Don't have an account? <a href="LoginForm.html">Register</a></p>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

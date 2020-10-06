@@ -1,0 +1,138 @@
+@font-face{
+	font-family:OpenSans;
+	src: url(fonts/OpenSans-Regular.ttf);
+	
+}
+@font-face{
+	font-family:OpenSansL;
+	src: url(fonts/OpenSans-Light.ttf);
+	
+}
+body{
+    font-family: OpenSans;
+    font-size: larger;
+    max-height: fit-content;
+}
+*{
+    box-sizing: border-box;
+} 
+  /* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 750px;
+} 
+.left {
+    width: 50%;
+}
+.right {
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h2{
+    text-align: center;
+}
+/*------------------------LEFT COLUMN-----------------------------------*/
+.form{
+    margin-left:20%;
+    
+}
+.divs{
+    background-color:#2f89fc;
+    padding:10px;
+}
+.input{
+    box-sizing: border-box;
+    width:80%;
+    margin: 3px 0;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+.inputs{
+    box-sizing: border-box;
+    width:60%;
+    margin: 3px 0;
+    margin-right: 4.5%;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+.inputz{
+    box-sizing: border-box;
+    width:15%;
+    margin: 3px 0;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+input[type="date"]{
+    width:51.8%;
+    margin: 3px 42px;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+select{
+    box-sizing: border-box;
+    width:20%;
+    padding: 20px 5px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+    margin-right: 10px;
+
+}
+label[for="firstname"]{
+    margin-right: 52%;
+}
+label[for=yrlevel]{
+    margin-right:17%;
+}
+
+
+/*------------------------LEFT COLUMN-----------------------------------*/
+
+.inputv{
+    box-sizing: border-box;
+    width:80%;
+    margin: 3px 0;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+
+button{
+    box-sizing: border-box;
+    width:80%;
+    margin: 3px 0;
+    padding: 20px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+    background-color: lightcoral;
+    font-size:larger;
+    
+}
+
+label[for="keep"]{
+ font-size: smaller;
+}
+label[for="show"]{
+    font-size: smaller;
+    margin-right: 15px;
+}
+input[type="checkbox"]{
+    width: 25px;
+    height:25px;
+    outline:1px solid lightblue;
+    
+    text-align: center;
+
+}
+p{
+    margin-right: 20%;
+}

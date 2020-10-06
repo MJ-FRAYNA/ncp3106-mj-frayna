@@ -1,0 +1,72 @@
+@font-face{
+	font-family:OpenSans;
+	src: url(fonts/OpenSans-Regular.ttf);
+	
+}
+body{
+	/*background-image: url("https://images.pexels.com/photos/891252/pexels-photo-891252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");*/
+    /*background-image: url("Images/DavidKlein.jpg");*/
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height:100vh;
+    font-family:OpenSans;
+    text-align: center;
+    align-content:auto;
+    background-color:#fff4e3;
+    font-size: larger;
+} 
+div{
+    width:500px;
+    border-radius: 10px;
+    background-color: #a1eafb;
+    border:solid #086972;
+    padding-bottom: 15px;
+    position: absolute;
+	left: 0;
+	right: 0;
+    margin:auto;
+
+}
+.divs{
+    margin-top:200px;
+    
+}
+.inputs{
+    box-sizing: border-box;
+    width:60%;
+    margin: 3px 0;
+    padding: 15px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    width:60%;
+    margin: 3px 0;
+    padding: 10px 10px;
+    border: 2px solid lightblue;
+    border-radius:4px;
+    background-color: lightcoral;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+label[for="keep"]{
+ font-size: smaller;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height:20px;
+    outline: 1px solid lightblue;
+}
+label[for="show"]{
+    font-size: smaller;
+    margin-right: 15px;
+}
+h2{
+    padding:10px;
+    background-color: #2f89fc;
+}
